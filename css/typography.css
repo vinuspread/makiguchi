@@ -1,0 +1,150 @@
+:root {
+  --font-4xl: 9.6rem;
+  --font-3xl: 6.4rem;
+  --font-2xl: 4.8rem;
+  --font-xl: 3.6rem;
+  --font-lg: 2.4rem;
+  --font-base: 2rem;
+  --font-md: 1.8rem;
+  --font-sm: 1.6rem;
+  --font-xs: 1.4rem;
+
+  --lh-sm: 1.2;
+  --lh-base: 1.5;
+  --lh-md: 1.8;
+
+  --ls-sm: -0.02rem;
+  --ls-base: 0;
+  --ls-md: 0.01rem;
+
+  --georgia: 'Georgia', sans-serif;
+  --pretendard: 'Pretendard Variable', Pretendard;
+  --notoserif: 'Noto Serif KR', serif;
+  --baseFontFamily:
+    -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', sans-serif;
+  --fontFamily: var(--pretendard), var(--baseFontFamily);
+  --REM: 62.5%;
+}
+
+body {
+  background-color: var(--white);
+}
+
+.text-4xl {
+  font-size: var(--fs, var(--font-4xl));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+}
+
+.text-3xl {
+  font-size: var(--fs, var(--font-3xl));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+}
+
+.text-2xl {
+  font-size: var(--fs, var(--font-2xl));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+  @media (width < 768px) {
+    --fs: 2.4rem;
+    letter-spacing: -0.072rem;
+  }
+}
+
+.text-xl {
+  font-size: var(--fs, var(--font-xl));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+  @media (width < 768px) {
+    --fs: 2rem;
+    line-height: 150%;
+    letter-spacing: 0;
+  }
+}
+
+.text-lg {
+  font-size: var(--fs, var(--font-lg));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+}
+
+.text-base {
+  font-size: var(--fs, var(--font-base));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+}
+
+.text-md {
+  font-size: var(--fs, var(--font-md));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+}
+
+.text-sm {
+  font-size: var(--fs, var(--font-sm));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+  @media (width < 768px) {
+    --fs: 1.2rem;
+  }
+}
+
+.text-xs {
+  font-size: var(--fs, var(--font-xs));
+  line-height: 160%;
+  letter-spacing: -0.08rem;
+}
+
+strong,
+b {
+  font-weight: var(--fw, 700);
+}
+
+.link {
+  text-decoration: underline 2px;
+  text-decoration-color: red;
+  text-underline-offset: 3px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Text Color                                 */
+/* -------------------------------------------------------------------------- */
+.text-primary {
+  color: var(--primary, #000);
+}
+.text-secondary {
+  color: var(--secondary, #000);
+}
+.text-danger {
+  color: var(--danger, #000);
+}
+.text-success {
+  color: var(--success, #000);
+}
+
+.text-gray100 {
+  color: var(--gray100);
+}
+.text-gray400 {
+  color: var(--gray400);
+}
+.text-gray600 {
+  color: var(--gray600);
+}
+.text-gray900 {
+  color: var(--gray900);
+}
+
+.logo {
+  color: var(--gray900);
+  font-family: var(--georgia);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  .footer & {
+    color: var(--gray400);
+  }
+}

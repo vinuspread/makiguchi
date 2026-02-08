@@ -1,0 +1,115 @@
+.select {
+  --height: 40px;
+  --pl: 16px;
+  --pr: 44px;
+  --rounded: 8px;
+  --borderColor: silver;
+  --arrowImage: url(../images/ico_select.svg);
+  --bgColor: #fff;
+  --fontSize: 19px;
+  --fontColor: #1d1d1d;
+
+  height: var(--height);
+  padding-inline: var(--pl) var(--pr);
+  border-radius: var(--rounded);
+  border: 1px solid var(--borderColor);
+  background: var(--arrowImage) no-repeat right var(--pl) center var(--bgColor);
+  color: var(--fontColor);
+  font-size: var(--fontSize);
+  appearance: none;
+}
+
+.pure-select {
+  --border: 2px solid #ddd;
+  --bgColor: #eee;
+  --padding: 10px;
+  --fontSize: 16px;
+  --transition: 0.4s;
+  --iconColor: #000;
+  --optionRadius: 8px;
+  --optionTop: calc(anchor(bottom) + 1px);
+  --optionLeft: anchor(10%);
+  --optionBorder: 2px solid #ddd;
+  --optionBg: #eee;
+  --optionPadding: 10px;
+  --optionGap: 4px;
+  --optionHoverColor: white;
+  --optionHoverBgColor: #ccc;
+
+  appearance: base-select;
+  border: var(--border);
+  background: var(--bgColor);
+  padding: var(--padding);
+  transition: var(--transition);
+  font-size: var(--fontSize);
+  &:hover,
+  &:focus {
+    background: #ddd;
+  }
+  &::picker-icon {
+    color: var(--iconColor);
+    transition: var(--transition) rotate;
+  }
+  &:open::picker-icon {
+    rotate: 180deg;
+  }
+  option {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--optionGap);
+
+    border: var(--optionBorder);
+    background: var(--optionBg);
+    padding: var(--optionPadding);
+    transition: 0.4s;
+    &:first-of-type {
+      border-radius: var(--optionRadius) var(--optionRadius) 0 0;
+    }
+    &:last-of-type {
+      border-radius: 0 0 var(--optionRadius) var(--optionRadius);
+    }
+    &:not(option:last-of-type) {
+      border-bottom: none;
+    }
+
+    &:nth-of-type(odd) {
+      background: #fff;
+    }
+    &:hover,
+    &:focus {
+      color: var(--optionHoverColor);
+      background: var(--optionHoverBgColor);
+    }
+    .icon {
+      font-size: 1.6rem;
+      text-box: trim-both cap alphabetic;
+    }
+    &:checked {
+      font-weight: bold;
+    }
+    &::checkmark {
+      order: 1;
+      margin-left: auto;
+      content: '☑️';
+    }
+  }
+  selectedcontent {
+    .icon {
+      display: none;
+    }
+  }
+  &::picker(select) {
+    appearance: base-select;
+    border: none;
+    opacity: 0;
+    transition: 0.4s allow-discrete;
+    top: var(--optionTop);
+    left: var(--optionLeft);
+  }
+  &::picker(select):popover-open {
+    opacity: 1;
+    @starting-style {
+      opacity: 0;
+    }
+  }
+}

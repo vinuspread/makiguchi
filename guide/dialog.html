@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dialog</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="module" src="./js/clipBoard.js"></script>
+</head>
+
+<body>
+  <h2>기본</h2>
+  <details class="variable">
+    <summary>특정 컴포넌트 소속에 따라 디자인이 일부 변형될경우 변수로 제어합니다.</summary>
+    <div class="list">
+      <div><strong>--radius</strong>모서리둥글기</div>
+      <div><strong>--padding</strong>내부여백</div>
+      <div><strong>--bgColor</strong>배경색</div>
+      <div><strong>--shadow</strong>그림자</div>
+      <div><strong>--backdrop</strong>배경</div>
+      <div><strong>--sizeBase</strong>기본크기</div>
+      <div><strong>--sizeSM</strong>작은크기</div>
+      <div><strong>--sizeMD</strong>중간크기</div>
+      <div><strong>--sizeLG</strong>큰크기</div>
+    </div>
+  </details>
+  <div class="copy-group">
+    <div class="copy">
+      <button class="btn base primary" popovertarget="popup1">팝업열기</button>
+      <div popover id="popup1" class="dialog">
+        <div class="dialog-header">
+          <h2>팝업제목</h2>
+          <button class="btn-dialog-close" aria-label="닫기" popovertarget="popup1"></button>
+        </div>
+        팝업내용
+      </div>
+    </div>
+    <div class="copy">
+      <button class="btn base primary" popovertarget="popup2">Small 팝업열기</button>
+      <div popover id="popup2" class="dialog sm">
+        <div class="dialog-header">
+          <h2>팝업제목</h2>
+          <button class="btn-dialog-close" aria-label="닫기" popovertarget="popup2"></button>
+        </div>
+        팝업내용
+      </div>
+    </div>
+    <div class="copy">
+      <button class="btn base primary" popovertarget="popup3">Medium 팝업열기</button>
+      <div popover id="popup3" class="dialog md">
+        <div class="dialog-header">
+          <h2>팝업제목</h2>
+          <button class="btn-dialog-close" aria-label="닫기" popovertarget="popup3"></button>
+        </div>
+        팝업내용
+      </div>
+    </div>
+  </div>
+  <h2>With Backdrop</h2>
+  <div class="text-sm">backdrop클래스를 추가하면 팝업 외부 클릭시 팝업이 닫히고, 배경이 어두워집니다.</div>
+  <div class="copy">
+    <button class="btn base primary" popovertarget="popup4">팝업열기</button>
+    <div popover id="popup4" class="dialog backdrop">
+      <div class="dialog-header">
+        <h2>팝업제목</h2>
+        <button class="btn-dialog-close" aria-label="닫기" popovertarget="popup4"></button>
+      </div>
+      팝업내용
+    </div>
+  </div>
+  <h2>With Animation</h2>
+  <div class="text-sm">animation클래스를 추가하면 팝업이 열릴때 애니메이션 효과가 적용됩니다.</div>
+  <div class="copy">
+    <button class="btn base primary" popovertarget="popup5">팝업열기</button>
+    <div popover id="popup5" class="dialog backdrop animation">
+      <div class="dialog-header">
+        <h2>팝업제목</h2>
+        <button class="btn-dialog-close" aria-label="닫기" popovertarget="popup5"></button>
+      </div>
+      팝업내용
+    </div>
+  </div>
+  <script type="module">
+    import { Popover } from '../js/Dialog.js';
+    Popover((id) => {
+      console.log('Popover ID:', id);
+    });
+  </script>
+</body>
+
+</html>

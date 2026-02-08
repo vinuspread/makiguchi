@@ -1,0 +1,60 @@
+[class*='text-list'] {
+  display: grid;
+  gap: var(--gapY);
+  > li {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: var(--gapX);
+    color: var(--color);
+    &::before {
+      content: var(--dot, '');
+      align-self: start;
+      width: var(--dotSize);
+      aspect-ratio: 1;
+      border-radius: var(--dotRadius);
+      background-color: var(--dotBgColor, transparent);
+      color: var(--dotColor, transparent);
+      translate: 0 var(--dotYOffset);
+    }
+  }
+}
+.text-list-type1 {
+  --gapY: 0.4rem;
+  --gapX: 1.2rem;
+  --color: var(--gray900);
+  --dot: '';
+  --dotSize: 0.6rem;
+  --dotRadius: calc(infinity * 1rem);
+  --dotBgColor: var(--primary);
+  --dotYOffset: 0.6rem;
+}
+.text-list-type2 {
+  --gapY: 0.4rem;
+  --gapX: 1.2rem;
+  --color: var(--gray900);
+  --dot: '*';
+  --dotSize: auto;
+  --dotRadius: 0;
+  --dotColor: var(--primary);
+  --dotYOffset: 0.2rem;
+}
+.text-list-type3 {
+  --gapY: 0.4rem;
+  --gapX: 1.2rem;
+  --color: var(--gray900);
+  --dot: '-';
+  --dotSize: auto;
+  --dotRadius: 0;
+  --dotColor: var(--primary);
+  --dotYOffset: -0.2rem;
+}
+.text-list-type4 {
+  --gapY: 0.4rem;
+  --gapX: 1.2rem;
+  --color: var(--gray900);
+  --dot: '';
+  --dotSize: 0.6rem;
+  --dotRadius: 0;
+  --dotBgColor: var(--primary);
+  --dotYOffset: 0.8rem;
+}

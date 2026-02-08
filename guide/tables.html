@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tables</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="module" src="./js/clipBoard.js"></script>
+</head>
+
+<body>
+  <h2>Basic Table</h2>
+  <p class="text-sm">단순한 데이터 표시용 테이블 디자인. 기능 없음 (정렬, 필터, 검색 X)</p>
+  <div class="copy">
+    <table class="table-type1">
+      <caption>마키구치 쓰네사부로 연대기 (1901년~1904년)</caption>
+      <colgroup>
+        <col style="width:var(--colWidth1);">
+        <col style="width:var(--colWidth2);">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col" id="th-year">연도/나이</th>
+          <th scope="col" id="th-content">날짜/내용</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" id="yr-1901" headers="th-year">1901년 30세</th>
+          <td headers="yr-1901 th-content">
+            <strong>4월 24일</strong>
+            <p>아내, 아이들과 함께 도쿄로 이주.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row" id="yr-1902" headers="th-year" rowspan="2">1902년 31세</th>
+          <td headers="yr-1902 th-content">
+            <strong>봄</strong>
+            <p>저명한 “일본의 풍경론” 작가이자 지리학자인 시게타 시가(1863-1927)를 방문. 마키구치 선생님은 홋카이도에서 학생들을 지도하며 작성한 2천 페이지에 달하는 지리교과서 초안을 시가에게
+              보여준다. 다음해 시가는 초안을 출판할 수 있도록 편집작업을 돕는다.</p>
+          </td>
+        </tr>
+        <tr>
+          <td headers="yr-1902 th-content">
+            <strong>8월 4일</strong>
+            <p>둘째 아들 젠지 탄생.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row" id="yr-1903" headers="th-year" rowspan="2">1903년 32세</th>
+          <td headers="yr-1903 th-content">
+            <strong>10월 15일</strong>
+            <p>마키구치 선생님의 첫 주요저작 ‘인생지리학’ 출간. 시게타 시가의 조언으로 1천 페이지로 편집, 시가의 소개말이 포함되어 있다. 출간 이후 여러 학술지, 신문사, 잡지사로부터 인생지리학에
+              대한 호평이 이어지고 1903년 두 차례 증쇄된다. 이 책은 지리교사자격시험에 응시하는 학생들을 위한 문부성 필독도서로 여겨졌다.</p>
+            <figure class="card-type1 sm">
+              <img src="../images/img_history1_1.png" alt="">
+              <figcaption>인생지리학</figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td headers="yr-1903 th-content">
+            <strong>11월 1일</strong>
+            <p>일본 최고의 교사양성 기관인 도쿄고등사범학교 동문회 총무가 되다.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row" id="yr-1904" headers="th-year">1904년 33세</th>
+          <td headers="yr-1904 th-content">
+            <strong>1월 3일</strong>
+            <p>1905년 11월까지 출간된 도쿄 고등사범학교 동문 기관지 ‘교육’의 편집장이 되다.</p>
+            <figure class="card-type1 sm">
+              <img src="../images/img_history1_1.png" alt="">
+              <figcaption>잡지 ‘일본의 소녀들’ 독자들과 함께.</figcaption>
+            </figure>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="copy">
+    <div class="table-type2">
+      <div class="row">
+        <div class="title" aria-labelledby="title1">제목</div>
+        <div class="content" aria-labelledby="content1">내용</div>
+      </div>
+      <div class="row">
+        <div class="title" aria-labelledby="title2">제목</div>
+        <div class="content" aria-labelledby="content2">내용</div>
+      </div>
+      <div class="row">
+        <div class="title" aria-labelledby="title3">제목</div>
+        <div class="content" aria-labelledby="content3">내용</div>
+      </div>
+    </div>
+  </div>
+  <h2>Interactive Table</h2>
+  <p class="text-sm">개별 셀에 기능이 일부 포함된 테이블 디자인. 예: 특정 셀에 버튼, 링크, 드롭다운 포함</p>
+  <div class="copy"></div>
+  <h2>Composite Table</h2>
+  <p class="text-sm">
+    다른 분자(Molecule)와 조합된 테이블 디자인. 예: 검색 바 + 필터 + 페이지네이션 + 정렬 기능 포함
+  </p>
+  <div class="copy"></div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "liveServer.settings.port": 5502,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "emmet.variables": { "lang": "ko" },
+  "prettier.arrowParens": "always",
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.bracketSameLine": false,
+  "prettier.bracketSpacing": true,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+  "prettier.trailingComma": "es5",
+  "prettier.singleQuote": true,
+  "prettier.semi": true
+}

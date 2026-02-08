@@ -1,0 +1,35 @@
+.breadcrumb {
+  --width: 0.8rem;
+  --height: 1.3rem;
+  --marginX: 1.2rem;
+  --bg: url(../images/ico_arrow_bread.svg) no-repeat center / contain;
+
+  display: inline-flex;
+  align-items: center;
+  @media (width < 768px) {
+    --width: 0.6rem;
+    --height: 1.2rem;
+    .icon {
+      --size: 2rem;
+    }
+  }
+  > * {
+    display: flex;
+    align-items: center;
+    color: var(--gray600);
+    font-size: 1.6rem;
+    letter-spacing: -0.064rem;
+    @media (width < 768px) {
+      font-size: 1.2rem;
+    }
+    + * {
+      &::before {
+        content: '';
+        width: var(--width);
+        height: var(--height);
+        margin-inline: var(--marginX);
+        background: var(--bg);
+      }
+    }
+  }
+}

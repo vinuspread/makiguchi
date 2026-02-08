@@ -1,0 +1,22 @@
+.card-type1 {
+  display: grid;
+  gap: var(--gap, 2.4rem);
+  width: var(--width, 100%);
+  align-self: start;
+  img {
+    width: var(--imageWidth, 100%);
+  }
+  figcaption {
+    color: var(--gray600);
+    font-size: var(--fs, 1.6rem);
+    line-height: 160%;
+    letter-spacing: -0.064rem;
+  }
+  &.sm {
+    --imageWidth: 22.2rem;
+    --fs: 1.4rem;
+    --gap: 1.6rem;
+
+    margin-top: 2.4rem;
+  }
+}

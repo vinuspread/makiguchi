@@ -1,0 +1,79 @@
+.ico-arrow {
+  --icon: url(../../images/ico_arrow_bread.svg) no-repeat center / contain;
+  --size: 2.4rem;
+}
+.ico-home {
+  --icon: url(../../images/ico_home.svg) no-repeat center / contain;
+  --size: 2.4rem;
+}
+.ico-menu {
+  --icon: url(../../images/ico_menu.svg) no-repeat center / contain;
+  --size: 2.4rem;
+}
+.ico-search {
+  --icon: url(../../images/ico_search.svg) no-repeat center / contain;
+  --size: 2.4rem;
+}
+.ico-select {
+  --icon: url(../../images/ico_select.svg) no-repeat center / contain;
+  --size: 2.4rem;
+}
+.ico-circle {
+  --icon: url(../../images/ico_circle.svg) no-repeat center / contain;
+  --size: 1.2rem;
+  @media (width < 768px) {
+    --size: 0.8rem;
+  }
+}
+.icon {
+  display: inline-block;
+  width: var(--size);
+  aspect-ratio: 1;
+  background: var(--icon);
+}
+[class^='ico'] {
+  &.sm {
+    --size: 2.4rem;
+  }
+  &.md {
+    --size: 3.2rem;
+  }
+  &.lg {
+    --size: 4rem;
+  }
+  &.xxl {
+    --size: 6rem;
+  }
+}
+[class^='ico'] {
+  &.before,
+  &.after {
+    --gap: 1.2rem;
+
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gap);
+    width: auto;
+    aspect-ratio: inherit;
+    background: none;
+    @media (width < 768px) {
+      --gap: 0.8rem;
+    }
+  }
+  &.before {
+    &::before {
+      content: '';
+      width: var(--size);
+      aspect-ratio: 1;
+      background: var(--icon);
+    }
+  }
+  &.after {
+    &::after {
+      content: '';
+      width: var(--size);
+      aspect-ratio: 1;
+      background: var(--icon);
+    }
+  }
+}

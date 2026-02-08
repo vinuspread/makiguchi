@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <script type="module" src="./js/clipBoard.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <h2>Input Field</h2>
+    <details class="variable">
+      <summary>특정 컴포넌트 소속에 따라 디자인이 일부 변형될경우 변수로 제어합니다.</summary>
+      <div class="list">
+        <div><strong>--paddingX</strong>좌우여백</div>
+        <div><strong>--width</strong>최소가로크기</div>
+        <div><strong>--height</strong>높이</div>
+        <div><strong>--borderColor</strong>테두리색</div>
+        <div><strong>--rounded</strong>모서리둥글기</div>
+        <div><strong>--fontSize</strong>글자크기</div>
+        <div><strong>--color</strong>글자색</div>
+        <div><strong>--placeholderColor</strong>플레이스홀더색</div>
+        <div><strong>--hoverBorderColor</strong>호버테두리색</div>
+        <div><strong>--focusBorderColor</strong>포커스테두리색</div>
+        <div><strong>--readonlyBorderColor</strong>읽기전용테두리색</div>
+        <div><strong>--readonlyBgColor</strong>읽기전용배경색</div>
+        <div><strong>--disabledBorderColor</strong>비활성화테두리색</div>
+        <div><strong>--disabledBgColor</strong>비활성화배경색</div>
+      </div>
+    </details>
+    <div class="copy-group">
+      <div class="copy"><input type="text" class="text-field" value="입력된 상태" /></div>
+      <div class="copy"><input type="text" class="text-field" placeholder="placeholder" /></div>
+      <div class="copy"><input type="text" class="text-field" disabled value="disabled" /></div>
+      <div class="copy"><input type="text" class="text-field" readonly value="readonly" /></div>
+      <div class="copy"><input type="text" class="text-field error" value=".error" /></div>
+    </div>
+    <h2>Select</h2>
+    <details class="variable">
+      <summary>특정 컴포넌트 소속에 따라 디자인이 일부 변형될경우 변수로 제어합니다.</summary>
+      <div class="list">
+        <div><strong>--height</strong>높이</div>
+        <div><strong>--pl</strong>좌측여백</div>
+        <div><strong>--pr</strong>우측여백</div>
+        <div><strong>--rounded</strong>모서리둥글기</div>
+        <div><strong>--borderColor</strong>테두리색</div>
+        <div><strong>--arrowImage</strong>화살표이미지</div>
+        <div><strong>--bgColor</strong>배경색</div>
+        <div><strong>--fontSize</strong>글자크기</div>
+        <div><strong>--fontColor</strong>글자색</div>
+      </div>
+    </details>
+    <div class="copy">
+      <select class="select">
+        <option>선택하세요.</option>
+      </select>
+    </div>
+    <h2>Select with Pure CSS</h2>
+    <details class="variable">
+      <summary>특정 컴포넌트 소속에 따라 디자인이 일부 변형될경우 변수로 제어합니다.</summary>
+      <div class="list">
+        <div><strong>--border</strong>외곽선</div>
+        <div><strong>--bgColor</strong>배경색</div>
+        <div><strong>--padding</strong>여백</div>
+        <div><strong>--fontSize</strong>글자크기</div>
+        <div><strong>--transition</strong>애니메이션속도</div>
+        <div><strong>--iconColor</strong>화살표아이콘색</div>
+        <div><strong>--optionRadius</strong>옵션 모서리둥글기</div>
+        <div><strong>--optionTop</strong>옵션 상단위치</div>
+        <div><strong>--optionLeft</strong>옵션 좌측위치</div>
+        <div><strong>--optionBorder</strong>옵션 선</div>
+        <div><strong>--optionBg</strong>옵션 배경색</div>
+        <div><strong>--optionPadding</strong>옵션 여백</div>
+        <div><strong>--optionGap</strong>옵션안 아이템 간격</div>
+        <div><strong>--optionHoverColor</strong>옵션 호버 글자색</div>
+        <div><strong>--optionHoverBgColor</strong>옵션 호버 배경색</div>
+      </div>
+    </details>
+    <div class="copy">
+      <select class="pure-select">
+        <button>
+          <selectedcontent></selectedcontent>
+        </button>
+        <option>선택하세요. 1<span class="icon">✖️</span></option>
+        <option>선택하세요. 2<span class="icon">✔️</span></option>
+      </select>
+    </div>
+    <h2>Textarea</h2>
+    <div class="copy">
+      <textarea class="text-field"></textarea>
+    </div>
+    <h2>Checkbox</h2>
+    <details class="variable">
+      <summary>특정 컴포넌트 소속에 따라 디자인이 일부 변형될경우 변수로 제어합니다.</summary>
+      <div class="list">
+        <div><strong>--offImage</strong>선택전이미지</div>
+        <div><strong>--onImage</strong>선택후이미지</div>
+        <div><strong>--fontSize</strong>글자크기</div>
+        <div><strong>--offColor</strong>비활성화색</div>
+        <div><strong>--onColor</strong>활성화색</div>
+        <div><strong>--pl</strong>좌측여백</div>
+        <div><strong>--height</strong>높이</div>
+      </div>
+    </details>
+    <div class="copy">
+      <div class="checkbox">
+        <input type="checkbox" checked id="check1" /><label for="check1">선택1</label><br />
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="check2" /><label for="check2">선택2</label>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="checkbox">
+        <input type="checkbox" checked id="check3" /><label for="check3"></label><br />
+      </div>
+      <div class="checkbox"><input type="checkbox" id="check4" /><label for="check4"></label></div>
+    </div>
+    <h2>Radio</h2>
+    <details class="variable">
+      <summary>특정 컴포넌트 소속에 따라 디자인이 일부 변형될경우 변수로 제어합니다.</summary>
+      <div class="list">
+        <div><strong>--offImage</strong>선택전이미지</div>
+        <div><strong>--onImage</strong>선택후이미지</div>
+        <div><strong>--fontSize</strong>글자크기</div>
+        <div><strong>--offColor</strong>비활성화색</div>
+        <div><strong>--onColor</strong>활성화색</div>
+        <div><strong>--pl</strong>좌측여백</div>
+        <div><strong>--height</strong>높이</div>
+      </div>
+    </details>
+    <div class="copy">
+      <div class="radio">
+        <input type="radio" name="radio-group" checked id="radio1" /><label for="radio1"
+          >선택1</label
+        >
+      </div>
+      <div class="radio">
+        <input type="radio" name="radio-group" id="radio2" /><label for="radio2">선택2</label>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="radio">
+        <input type="radio" name="radio-group" checked id="radio3" /><label for="radio3"></label>
+      </div>
+      <div class="radio">
+        <input type="radio" name="radio-group" id="radio4" /><label for="radio4"></label>
+      </div>
+    </div>
+    <h2>Switch</h2>
+    <div class="copy">
+      <div class="switch">
+        <input type="checkbox" id="switch1" />
+        <label for="switch1" data-on="활성" data-off="비활성"></label>
+      </div>
+    </div>
+    <h2>Chip</h2>
+    <details class="variable">
+      <summary>특정 컴포넌트 소속에 따라 디자인이 일부 변형될경우 변수로 제어합니다.</summary>
+      <div class="list">
+        <div><strong>--borderOnColor</strong>활성화선색</div>
+        <div><strong>--borderOffColor</strong>비활성화선색</div>
+        <div><strong>--fontOnColor</strong>활성화글자색</div>
+        <div><strong>--fontOffColor</strong>비활성화글자색</div>
+        <div><strong>--bgOnColor</strong>활성화배경색</div>
+        <div><strong>--bgOffColor</strong>비활성화배경색</div>
+        <div><strong>--px</strong>좌우패딩</div>
+        <div><strong>--py</strong>상하패딩</div>
+        <div><strong>--fontSize</strong>글자크기</div>
+        <div><strong>--rounded</strong>모서리둥글기</div>
+        <div><strong>--gap</strong>간격</div>
+      </div>
+    </details>
+    <div class="copy">
+      <div class="chip">
+        <input type="radio" id="chip1" name="chip" checked /><label for="chip1">선택1</label>
+        <input type="radio" id="chip2" name="chip" /><label for="chip2">선택2</label>
+        <input type="radio" id="chip3" name="chip" /><label for="chip3">선택3</label>
+        <input type="radio" id="chip4" name="chip" /><label for="chip4">선택4</label>
+      </div>
+    </div>
+    <h2>Floating Label</h2>
+    <div class="copy">
+      <div class="floating-label">
+        <input type="text" id="name" placeholder=" " required />
+        <label for="name">이름</label>
+      </div>
+    </div>
+    <h2>Input Date</h2>
+    <details class="variable">
+      <summary>특정 컴포넌트 소속에 따라 디자인이 일부 변형될경우 변수로 제어합니다.</summary>
+      <div class="list">
+        <div><strong>--bg</strong>달력아이콘 ex) url(경로)</div>
+        <div><strong>--paddingRight</strong>우측여백</div>
+        <div><strong>--paddingLeft</strong>좌측여백</div>
+        <div><strong>--height</strong>높이</div>
+        <div><strong>--rounded</strong>모서리둥글기</div>
+        <div><strong>--borderColor</strong>테두리색</div>
+        <div><strong>--fontSize</strong>글자크기</div>
+      </div>
+    </details>
+    <div class="copy">
+      <input type="date" data-placeholder="시작일" required />
+    </div>
+  </body>
+</html>

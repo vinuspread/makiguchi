@@ -1,0 +1,23 @@
+.gnb {
+  @media (width < 1024px) {
+    display: none;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+  }
+  a {
+    display: block;
+    padding-block: 3.3rem;
+    color: var(--gray900);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 180%;
+  }
+  li.active {
+    a {
+      background: linear-gradient(var(--gray900), var(--gray900)) no-repeat bottom / 100% 0.3rem;
+    }
+  }
+}

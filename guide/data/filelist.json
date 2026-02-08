@@ -1,0 +1,57 @@
+{
+  "projectName": "프로젝트명",
+  "colspan": 9,
+  "rows": [
+    {
+      "type": "page",
+      "title": "스타일가이드",
+      "href": "./style.html",
+      "display": "style.html",
+      "update": "2026.01.00",
+      "flags": [true, true, true],
+      "states": ["r", "ing"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "MAIN",
+      "href": "./pages/main.html",
+      "display": "main.html",
+      "update": "2026.00.00",
+      "flags": [true, true, true],
+      "states": ["r", "ing"],
+      "note": ""
+    },
+    { "type": "category", "label": "마키구치 쓰네사부로" },
+    {
+      "type": "page",
+      "title": "생애",
+      "href": "./pages/sub1_1.html",
+      "display": "sub1_1.html",
+      "update": "2026.02.08",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "시대별활동",
+      "href": "./pages/sub1_2.html",
+      "display": "sub1_2.html",
+      "update": "2026.02.08",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "메뉴명1-2",
+      "href": ".html",
+      "display": ".html",
+      "update": "2026.00.00",
+      "flags": [false, false, false],
+      "states": ["r", "ing"],
+      "note": ""
+    }
+  ]
+}

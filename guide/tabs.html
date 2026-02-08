@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="module" src="./js/clipBoard.js"></script>
+  <script type="module" src="../js/global.js"></script>
+</head>
+
+<body>
+  <h2>Tab Type1</h2>
+  <div class="copy">
+    <div class="tab-type1">
+      <nav class="container">
+        <ul data-tab="tab">
+          <li class="active" data-tab-item><button>탭메뉴1</button></li>
+          <li data-tab-item><button>탭메뉴2</button></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <h2>Tab Type2</h2>
+  <div class="copy">
+    <nav>
+      <ul data-tab="tab2" class="tab-type2">
+        <li class="active" data-tab-item><button>탭메뉴1</button></li>
+        <li data-tab-item><button>탭메뉴2</button></li>
+      </ul>
+    </nav>
+    <div data-tab-contents="tab2">
+      <div class="active" data-tab-content>탭메뉴1 내용</div>
+      <div data-tab-content>탭메뉴2 내용</div>
+    </div>
+  </div>
+</body>
+
+</html>

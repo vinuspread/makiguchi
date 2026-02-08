@@ -1,0 +1,66 @@
+/* -------------------------------------------------------------------------- */
+/*                                    Align                                   */
+/* -------------------------------------------------------------------------- */
+.align {
+  display: flex;
+
+  &.both {
+    justify-content: space-between;
+  }
+  &.right {
+    justify-content: end;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.triple {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+    > :nth-child(1) {
+      justify-self: start;
+      white-space: nowrap;
+    }
+    > :nth-child(2) {
+      justify-self: center;
+    }
+    > :nth-child(3) {
+      white-space: nowrap;
+      justify-self: end;
+    }
+  }
+  &.vt {
+    align-items: start;
+  }
+  &.vm {
+    align-items: center;
+  }
+  &.vb {
+    align-items: end;
+  }
+  &:has(.breadcrumb) {
+    @media (width < 768px) {
+      display: grid;
+      gap: 1.2rem;
+    }
+  }
+  &:has(.ico-cirle, .text-xl) {
+    @media (width < 768px) {
+      display: grid;
+      gap: 0.8rem;
+    }
+  }
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-justify {
+  text-align: justify;
+  word-break: normal;
+}

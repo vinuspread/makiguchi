@@ -1,0 +1,116 @@
+[data-tab-content] {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+@scope (.tab-type1) {
+  :scope {
+    --tab-bg: var(--white);
+    --tab-border: none;
+    --tab-text-color: var(--gray400);
+    --tab-active-text-color: var(--gray900);
+    --tab-padding: 4.8rem 0;
+    --tab-radius: 0;
+    --tab-gap: 4.8rem;
+
+    margin-bottom: 7.2rem;
+    border-bottom: 0.1rem solid var(--black10);
+    @media (width < 1024px) {
+      --tab-padding: 1.6rem 0;
+      --tab-gap: 3.6rem;
+
+      margin-bottom: 6rem;
+    }
+    @media (width < 768px) {
+      --tab-padding: 1.2rem 0;
+      --tab-gap: 2.4rem;
+
+      margin-bottom: 3.6rem;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      gap: var(--tab-gap);
+      border-bottom: var(--tab-border);
+      margin-bottom: -0.1rem;
+    }
+  }
+  .active {
+    button {
+      color: var(--tab-active-text-color);
+      border-bottom: 1px solid var(--gray900);
+    }
+  }
+  button {
+    background-color: var(--tab-bg);
+    border: none;
+    color: var(--tab-text-color);
+    padding: var(--tab-padding);
+    border-radius: var(--tab-radius);
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+}
+
+@scope (.tab-type2) {
+  :scope {
+    --tab-bg: var(--white);
+    --tab-border: none;
+    --tab-button-border: 0.1rem solid var(--gray900);
+    --tab-text-color: var(--gray400);
+    --tab-active-text-color: var(--gray900);
+    --tab-padding: 1.6rem;
+    --tab-radius: 0;
+    --tab-gap: 0;
+
+    display: flex;
+    gap: var(--tab-gap);
+    border-bottom: var(--tab-border);
+    margin-bottom: 7.2rem;
+    @media (width < 1024px) {
+      --tab-padding: 1.2rem;
+
+      margin-bottom: 6rem;
+    }
+    @media (width < 768px) {
+      --tab-padding: 0.8rem;
+
+      margin-bottom: 3.6rem;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+  }
+  .active {
+    button {
+      color: var(--tab-active-text-color);
+      border: var(--tab-button-border);
+    }
+  }
+  button {
+    background-color: var(--tab-bg);
+    border: 1px solid transparent;
+    color: var(--tab-text-color);
+    padding: var(--tab-padding);
+    border-radius: var(--tab-radius);
+    font-size: 1.6rem;
+    font-weight: 700;
+    white-space: nowrap;
+
+    @media (width < 1024px) {
+      font-size: 1.4rem;
+    }
+    @media (width < 768px) {
+      font-size: 1.2rem;
+    }
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+}

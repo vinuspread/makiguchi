@@ -1,0 +1,62 @@
+.dialog {
+  --radius: 1rem;
+  --padding: 1rem;
+  --bgColor: var(--white);
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --backdrop: rgba(0, 0, 0, 0.5);
+  --sizeBase: 320px;
+  --sizeSM: 320px;
+  --sizeMD: 768px;
+  --sizeLG: 1024px;
+
+  inset: 50% auto auto 50%;
+  translate: -50% -50%;
+  border-radius: var(--radius);
+  background-color: var(--bgColor);
+  box-shadow: var(--shadow);
+  padding: var(--padding);
+  width: min(var(--widthBase, 90%), var(--width, var(--sizeBase)));
+  &.sm {
+    --width: var(--sizeSM);
+  }
+  &.md {
+    --width: var(--sizeMD);
+  }
+  &.lg {
+    --width: var(--sizeLG);
+  }
+  &.backdrop {
+    &::backdrop {
+      background-color: var(--backdrop);
+    }
+  }
+  &.animation {
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) allow-discrete;
+    margin-top: -5rem;
+    opacity: 0;
+    &.backdrop {
+      &::backdrop {
+        transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) allow-discrete;
+        opacity: 0;
+      }
+    }
+    &:popover-open {
+      margin-top: 0;
+      opacity: 1;
+      &.backdrop {
+        &::backdrop {
+          opacity: 1;
+        }
+      }
+      @starting-style {
+        margin-top: -5rem;
+        opacity: 0;
+        &.backdrop {
+          &::backdrop {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.table-type1 {
+  --colWidth1: 32rem;
+  @media (width < 1024px) {
+    --colWidth1: 25.6rem;
+  }
+  @media (width < 768px) {
+    border-top: 0.1rem solid var(--gray900);
+  }
+  @media (width < 768px) {
+    colgroup {
+      display: none;
+    }
+  }
+  thead {
+    border-top: 0.1rem solid var(--gray900);
+    border-bottom: 0.1rem solid var(--gray900);
+    @media (width < 768px) {
+      display: none;
+    }
+    th {
+      padding: 2.4rem;
+      color: var(--gray900);
+      font-size: 2rem;
+      line-height: 150%;
+      text-align: left;
+      @media (width < 1024px) {
+        padding: 1.6rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 0.1rem solid var(--black10);
+      @media (width < 768px) {
+        display: grid;
+        border: none;
+      }
+    }
+    th {
+      padding: 2.4rem;
+      color: var(--gray900);
+      font-size: 2rem;
+      line-height: 150%;
+      text-align: left;
+      vertical-align: top;
+      @media (width < 1024px) {
+        padding: 1.6rem;
+        font-size: 1.6rem;
+      }
+      @media (width < 768px) {
+        padding: 1.2rem;
+        border-bottom: 0.1rem solid var(--black10);
+      }
+    }
+    td {
+      padding: 2.4rem;
+      @media (width < 1024px) {
+        padding: 1.6rem;
+      }
+      @media (width < 768px) {
+        padding: 1.2rem;
+        border-bottom: 0.1rem solid var(--black10);
+      }
+      strong {
+        font-size: 1.8rem;
+        @media (width < 1024px) {
+          font-size: 1.6rem;
+        }
+      }
+      p {
+        font-size: 2rem;
+        padding-top: 0.8rem;
+        line-height: 160%;
+        @media (width < 1024px) {
+          font-size: 1.6rem;
+          padding-top: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+.table-type2 {
+  --col1: 15rem;
+  > .row {
+    display: grid;
+    grid-template-columns: var(--col1) 1fr;
+    border-bottom: 1px solid var(--gray400);
+    > .vt {
+      align-self: start;
+    }
+    > .vm {
+      align-self: end;
+    }
+    > .vb {
+      align-self: bottom;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>파일리스트</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="./guide/css/filelist.css">
+  <script type="module" src="./guide/js/filelist.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1></h1>
+      <div class="top clear">
+        <ul>
+          <li>구분 :</li>
+          <li><span class="state r"></span></li>
+          <li>반응형</li>
+          <li><span class="state w"></span></li>
+          <li>WEB</li>
+          <li><span class="state m"></span></li>
+          <li>모바일&nbsp;&nbsp;&nbsp;/</li>
+          <li>상태 :</li>
+          <li><span class="state end"></span></li>
+          <li>완료</li>
+          <li><span class="state ing"></span></li>
+          <li>진행중&nbsp;&nbsp;&nbsp;/</li>
+          <li><span class="state modify"></span></li>
+          <li>수정</li>
+        </ul>
+        <div class="status">
+          <span id="progress"><em></em></span> <span id="total"></span>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th>페이지</th>
+            <th>파일명</th>
+            <th>작업일</th>
+            <th>웹표준</th>
+            <th>호환성</th>
+            <th>웹접근성</th>
+            <th>구분</th>
+            <th>상태</th>
+            <th>참고사항</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

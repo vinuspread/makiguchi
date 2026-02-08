@@ -1,0 +1,28 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Spacing                                  */
+/* -------------------------------------------------------------------------- */
+.mt2 {
+  margin-top: 0.2rem;
+}
+.mt4 {
+  margin-top: 0.4rem;
+}
+
+.mt-lg {
+  margin-top: 5rem;
+  @media (width < 1024px) {
+    margin-top: 4rem;
+  }
+  @media (width < 768px) {
+    margin-top: 3rem;
+  }
+}
+.mt-md {
+  margin-top: 6rem;
+  @media (width < 1024px) {
+    margin-top: 6rem;
+  }
+  @media (width < 768px) {
+    margin-top: 3.6rem;
+  }
+}

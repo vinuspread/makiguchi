@@ -1,0 +1,18 @@
+.scroll {
+  --maxHeight: 200px;
+  --width: 4px;
+  --color: rgba(0, 0, 0, 0.08);
+
+  font-size: 2rem;
+  overflow: auto;
+  max-height: var(--maxHeight);
+  &::-webkit-scrollbar {
+    width: var(--width);
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: var(--width);
+    border-radius: calc(infinity * 1rem);
+    background-color: var(--color);
+  }
+}
