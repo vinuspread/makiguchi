@@ -16,20 +16,23 @@
   }
   strong {
     color: var(--gray900);
-    font-size: 3.6rem;
+    font-size: 2.4rem;
     font-weight: 700;
     line-height: 150%;
     @media (width < 1024px) {
-      font-size: 2.4rem;
-    }
-    @media (width < 768px) {
       font-size: 2rem;
     }
   }
   div {
     color: var(--gray600);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 160%;
+    @media (width < 1024px) {
+      font-size: 1.4rem;
+    }
+    @media (width < 768px) {
+      font-size: 1.2rem;
+    }
   }
 }
