@@ -50,7 +50,7 @@
       { "text": "Tables", "href": "./guide/tables.html" },
       { "text": "Form Group", "href": null },
       { "text": "Button Group", "href": null },
-      { "text": "Post Meta", "href": null },
+      { "text": "Post Meta", "href": "./guide/postmeta.html" },
       { "text": "Search", "href": null },
       { "text": "Filter", "href": null },
       { "text": "Datepicker", "href": null },
@@ -58,7 +58,8 @@
       { "text": "Dialog", "href": null },
       { "text": "State Feedback", "href": null },
       { "text": "Diagram", "href": null },
-      { "text": "Indicators", "href": null }
+      { "text": "Indicators", "href": null },
+      { "text": "Content List", "href": "./guide/contentlist.html" }
     ]
   },
   {

@@ -24,3 +24,29 @@
     --gap: 3.6rem;
   }
 }
+.column-3 {
+  --column: min-content min-content 1fr;
+  --gap: 6rem;
+  img {
+    width: 100%;
+    &:nth-of-type(1) {
+      width: 100%;
+      min-width: var(--width1, 33rem);
+    }
+    &:nth-of-type(2) {
+      width: 100%;
+      min-width: var(--width2, 18rem);
+    }
+  }
+  @media (width < 1024px) {
+    --column: 2fr 1fr;
+    --width1: 100%;
+    --width2: 100%;
+    :last-child {
+      grid-column: span 2;
+    }
+  }
+  @media (width < 768px) {
+    --gap: 3.6rem;
+  }
+}

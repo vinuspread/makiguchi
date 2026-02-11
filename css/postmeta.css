@@ -1,0 +1,56 @@
+.post-meta {
+  display: grid;
+  padding-block: 2.4rem;
+  gap: 1.6rem;
+  align-self: stretch;
+  border-top: 0.1rem solid var(--gray900);
+  border-bottom: 0.1rem solid var(--gray900);
+  @media (width < 1024px) {
+    padding-block: 1.6rem;
+    gap: 1.2rem;
+  }
+  h3 {
+    color: var(--gray900);
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 150%;
+    @media (width < 1024px) {
+      font-size: 2.4rem;
+    }
+  }
+  p {
+    color: var(--gray600);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 160%;
+    @media (width < 1024px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.post-glossary {
+  display: grid;
+  gap: 7.2rem;
+  h4 {
+    color: var(--gray900);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 160%;
+    @media (width < 1024px) {
+      font-size: 1.6rem;
+    }
+  }
+  p {
+    color: var(--gray600);
+    font-size: 2rem;
+    line-height: 160%;
+    letter-spacing: -0.08rem;
+    margin-top: 0.8rem;
+    text-align: justify;
+    @media (width < 1024px) {
+      margin-top: 0.4rem;
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -9,7 +9,7 @@
       "display": "style.html",
       "update": "2026.01.00",
       "flags": [true, true, true],
-      "states": ["r", "ing"],
+      "states": ["r", "end"],
       "note": ""
     },
     {
@@ -43,14 +43,308 @@
       "states": ["r", "end"],
       "note": ""
     },
+    { "type": "category", "label": "지리학자" },
     {
       "type": "page",
-      "title": "메뉴명1-2",
-      "href": ".html",
-      "display": ".html",
-      "update": "2026.00.00",
-      "flags": [false, false, false],
-      "states": ["r", "ing"],
+      "title": "학자로서의 면모",
+      "href": "./pages/sub2_1.html",
+      "display": "sub2_1.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "제국시대",
+      "href": "./pages/sub2_2.html",
+      "display": "sub2_2.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "인생지리학",
+      "href": "./pages/sub2_3.html",
+      "display": "sub2_3.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "합리적 방법",
+      "href": "./pages/sub2_4.html",
+      "display": "sub2_4.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "가능성을 그리다",
+      "href": "./pages/sub2_5.html",
+      "display": "sub2_5.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "인도적 경쟁",
+      "href": "./pages/sub2_6.html",
+      "display": "sub2_6.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    { "type": "category", "label": "교육자" },
+    {
+      "type": "page",
+      "title": "교육 개혁가로서의 면모",
+      "href": "./pages/sub3_1.html",
+      "display": "sub3_1.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "창가교육",
+      "href": "./pages/sub3_2.html",
+      "display": "sub3_2.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "교육의 목적은 행복",
+      "href": "./pages/sub3_3.html",
+      "display": "sub3_3.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "인생의 가치에 관해",
+      "href": "./pages/sub3_4.html",
+      "display": "sub3_4.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "이론에서 실천으로",
+      "href": "./pages/sub3_5.html",
+      "display": "sub3_5.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    { "type": "category", "label": "종교 개혁가" },
+    {
+      "type": "page",
+      "title": "종교 개혁가로서의 면모",
+      "href": "./pages/sub4_1.html",
+      "display": "sub4_1.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "구도심",
+      "href": "./pages/sub4_2.html",
+      "display": "sub4_2.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "니치렌의 이상",
+      "href": "./pages/sub4_3.html",
+      "display": "sub4_3.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "보편적 인과법칙",
+      "href": "./pages/sub4_4.html",
+      "display": "sub4_4.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "대선(大禪)의 삶",
+      "href": "./pages/sub4_5.html",
+      "display": "sub4_5.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "군국주의와 싸우다",
+      "href": "./pages/sub4_6.html",
+      "display": "sub4_6.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "투옥과 취조",
+      "href": "./pages/sub4_7.html",
+      "display": "sub4_7.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "감옥에서 보낸 편지",
+      "href": "./pages/sub4_8.html",
+      "display": "sub4_8.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "‘사상범’의 기록",
+      "href": "./pages/sub4_9.html",
+      "display": "sub4_9.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "흔들리지 않는 신념",
+      "href": "./pages/sub4_10.html",
+      "display": "sub4_10.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    { "type": "category", "label": "아카이브" },
+    {
+      "type": "page",
+      "title": "명언",
+      "href": "./pages/sub5_1.html",
+      "display": "sub5_1.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "참고 글과 논평1",
+      "href": "./pages/sub5_2.html",
+      "display": "sub5_2.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "참고 글과 논평2",
+      "href": "./pages/sub5_2_1.html",
+      "display": "sub5_2_1.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "학술논문 소개",
+      "href": "./pages/sub5_3.html",
+      "display": "sub5_3.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "감옥으로부터의 편지",
+      "href": "./pages/sub5_4.html",
+      "display": "sub5_4.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "번역선집",
+      "href": "./pages/sub5_5.html",
+      "display": "sub5_5.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "관련서적 소개",
+      "href": "./pages/sub5_6.html",
+      "display": "sub5_6.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "옛날 교과서",
+      "href": "./pages/sub5_7.html",
+      "display": "sub5_7.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "용어집",
+      "href": "./pages/sub5_8.html",
+      "display": "sub5_8.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
       "note": ""
     }
   ]

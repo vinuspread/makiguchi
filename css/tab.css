@@ -6,7 +6,7 @@
 }
 @scope (.tab-type1) {
   :scope {
-    --tab-bg: var(--white);
+    --tab-bg: none;
     --tab-border: none;
     --tab-text-color: var(--gray400);
     --tab-active-text-color: var(--gray900);
@@ -21,6 +21,9 @@
       --tab-gap: 3.6rem;
 
       margin-bottom: 6rem;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
     }
     @media (width < 768px) {
       --tab-padding: 1.2rem 0;
@@ -51,6 +54,7 @@
     border-radius: var(--tab-radius);
     font-size: 1.6rem;
     font-weight: 700;
+    white-space: nowrap;
 
     &:hover {
       background-color: var(--white);

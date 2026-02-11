@@ -57,3 +57,28 @@
     letter-spacing: -0.08rem;
   }
 }
+
+.hero-type3 {
+  blockquote {
+    padding-block: 4.8rem;
+    color: var(--gray900);
+    font-family: var(--notoserif);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: -0.08rem;
+    border-top: 0.1rem dashed var(--black20);
+    border-bottom: 0.1rem dashed var(--black20);
+    text-align: justify;
+    @media (width < 1024px) {
+      padding-block: 3.6rem;
+      font-size: 2.4rem;
+      letter-spacing: -0.096rem;
+    }
+    @media (width < 768px) {
+      padding-block: 2.4rem;
+      font-size: 2rem;
+      letter-spacing: -0.08rem;
+    }
+  }
+}

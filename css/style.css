@@ -49,6 +49,8 @@
 @import url(./footer.css) layer(organisms.footer);
 @import url(./card.css) layer(organisms.card);
 @import url(./hero.css) layer(organisms.hero);
+@import url(./postmeta.css) layer(organisms.postmeta);
+@import url(./contentlist.css) layer(organisms.contentlist);
 
 /* 템플릿 */
 /* 페이지 */

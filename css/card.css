@@ -1,8 +1,18 @@
 .card-type1 {
   display: grid;
-  gap: var(--gap, 2.4rem);
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
+  gap: var(--cardGap, 2.4rem) 0;
   width: var(--width, 100%);
   align-self: start;
+  @media (width < 1024px) {
+    --fs: 1.4rem;
+    --cardGap: 1.6rem;
+  }
+  @media (width < 768px) {
+    --fs: 1.2rem;
+    --cardGap: 1.2rem;
+  }
   img {
     width: var(--imageWidth, 100%);
   }
@@ -15,8 +25,54 @@
   &.sm {
     --imageWidth: 22.2rem;
     --fs: 1.4rem;
-    --gap: 1.6rem;
+    --cardGap: 1.6rem;
 
     margin-top: 2.4rem;
+  }
+}
+
+.card-type2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 6rem;
+  li {
+    &:has(strong) {
+      .meta {
+        margin-top: 1.6rem;
+        @media (width < 1024px) {
+          margin-top: 1.2rem;
+        }
+        @media (width < 768px) {
+          margin-top: 0.8rem;
+        }
+      }
+    }
+  }
+  strong {
+    margin-top: 0.8rem;
+  }
+  .meta {
+    color: var(--gray600);
+    font-size: 1.6rem;
+    line-height: 160%;
+    letter-spacing: -0.064rem;
+    @media (width < 1024px) {
+      font-size: 1.4rem;
+    }
+    @media (width < 768px) {
+      font-size: 1.2rem;
+    }
+  }
+  .image {
+    padding-bottom: 2.4rem;
+    @media (width < 1024px) {
+      padding-bottom: 1.6rem;
+    }
+    @media (width < 768px) {
+      padding-bottom: 1.2rem;
+    }
+  }
+  img {
+    width: 100%;
   }
 }
