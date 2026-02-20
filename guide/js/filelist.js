@@ -76,7 +76,7 @@ const renderTableBody = (tbody, payload) => {
   if (!tbody) return;
 
   try {
-    const res = await fetch('/guide/data/filelist.json', { cache: 'no-store' });
+    const res = await fetch('./guide/data/filelist.json', { cache: 'no-store' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     renderTableBody(tbody, data);
