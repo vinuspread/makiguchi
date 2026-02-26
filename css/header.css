@@ -1,4 +1,7 @@
 .header {
+  anchor-name: --mega;
+  position: absolute;
+  inset: 0 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,5 +17,75 @@
   .right {
     display: flex;
     gap: 2.4rem;
+  }
+}
+
+@media (width < 1024px) {
+  body:has(.mega-nav:popover-open) {
+    overflow: hidden;
+  }
+}
+.mega-nav {
+  position: fixed;
+  inset: anchor(--mega bottom) 0 auto;
+  border-top: 1px solid var(--black10);
+  z-index: 1000;
+  background-color: var(--white);
+  @media (width < 1024px) {
+    inset: anchor(--mega bottom) 0 0;
+  }
+  &::backdrop {
+    background-color: var(--black10);
+    inset: anchor(--mega bottom) 0 0;
+  }
+}
+.mega-inner {
+  width: 144rem;
+  margin: 6rem auto;
+  display: flex;
+  gap: 4.8rem;
+  @media (width < 1024px) {
+    width: 100%;
+    margin: 0;
+    padding: 3.6rem 2rem;
+    box-sizing: border-box;
+    display: grid;
+    gap: 2.4rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .menu-group {
+    flex: 1;
+  }
+  h2 {
+    padding-bottom: 1.6rem;
+    @media (width < 1024px) {
+      padding-bottom: 0.8rem;
+    }
+    a {
+      font-size: 2.4rem;
+      line-height: 150%;
+      @media (width < 1024px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  ul {
+    display: grid;
+    gap: 0.8rem;
+    @media (width < 1024px) {
+      gap: 0.4rem;
+    }
+  }
+  li {
+    a {
+      color: var(--gray600);
+      font-size: 1.6rem;
+      line-height: 160%;
+      letter-spacing: -0.064rem;
+      @media (width < 1024px) {
+        font-size: 1.4rem;
+      }
+    }
   }
 }

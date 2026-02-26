@@ -10,14 +10,22 @@
   a {
     display: block;
     padding-block: 3.3rem;
-    color: var(--gray900);
+    color: var(--white);
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 180%;
   }
   li.active {
     a {
-      background: linear-gradient(var(--gray900), var(--gray900)) no-repeat bottom / 100% 0.3rem;
+      background: linear-gradient(var(--white), var(--white)) no-repeat bottom / 100% 0.3rem;
     }
+  }
+}
+body:has(.hero-type1:empty) {
+  .header .right {
+    padding-top: 0.9rem;
+  }
+  .gnb a {
+    padding-block: 2.4rem;
   }
 }
