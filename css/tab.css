@@ -41,12 +41,15 @@
     }
   }
   .active {
+    a,
     button {
       color: var(--tab-active-text-color);
       border-bottom: 1px solid var(--gray900);
     }
   }
+  a,
   button {
+    display: inline-block;
     background-color: var(--tab-bg);
     border: none;
     color: var(--tab-text-color);
