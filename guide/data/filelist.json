@@ -339,9 +339,50 @@
     },
     {
       "type": "page",
+      "title": "영상물",
+      "href": "./pages/sub5_7_1.html",
+      "display": "sub5_7_1.html",
+      "update": "2026.02.25",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
       "title": "용어집",
       "href": "./pages/sub5_8.html",
       "display": "sub5_8.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    { "type": "category", "label": "기타페이지" },
+    {
+      "type": "page",
+      "title": "관련링크",
+      "href": "./pages/etc1.html",
+      "display": "etc1.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "이용약관",
+      "href": "./pages/etc2.html",
+      "display": "etc2.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "의견보내기",
+      "href": "./pages/etc3.html",
+      "display": "etc3.html",
       "update": "2026.02.10",
       "flags": [true, true, true],
       "states": ["r", "end"],

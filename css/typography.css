@@ -167,7 +167,7 @@ b {
 }
 
 .logo {
-  color: var(--gray900);
+  color: var(--white);
   font-family: var(--georgia);
   font-size: 2.4rem;
   font-weight: 700;
