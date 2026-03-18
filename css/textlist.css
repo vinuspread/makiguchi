@@ -114,3 +114,37 @@
     }
   }
 }
+
+.site-links {
+  border-top: 1px solid var(--gray900);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  li {
+    border-bottom: 1px solid var(--black10);
+    height: 16rem;
+    align-content: center;
+  }
+  strong {
+    display: block;
+    padding-bottom: 0.6rem;
+    font-size: 2rem;
+    line-height: 150%;
+    color: var(--gray900);
+  }
+  a {
+    font-size: 1.6rem;
+    color: var(--gray600);
+    line-height: 160%;
+    letter-spacing: -0.04em;
+    text-decoration: underline;
+  }
+  span {
+    font-size: 1.6rem;
+    color: var(--gray600);
+    line-height: 160%;
+    letter-spacing: -0.04em;
+    + span {
+      padding-left: 1.6rem;
+    }
+  }
+}

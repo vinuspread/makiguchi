@@ -53,4 +53,6 @@
 @import url(./contentlist.css) layer(organisms.contentlist);
 
 /* 템플릿 */
+
 /* 페이지 */
+@import url(./search.css) layer(page.search);

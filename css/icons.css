@@ -14,6 +14,10 @@
   --icon: url(../../images/ico_search.svg) no-repeat center / contain;
   --size: 2.4rem;
 }
+.ico-search2 {
+  --icon: url(../../images/ico_search2.svg) no-repeat center / contain;
+  --size: 2.4rem;
+}
 .ico-select {
   --icon: url(../../images/ico_select.svg) no-repeat center / contain;
   --size: 2.4rem;

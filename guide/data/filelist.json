@@ -387,6 +387,26 @@
       "flags": [true, true, true],
       "states": ["r", "end"],
       "note": ""
+    },
+    {
+      "type": "page",
+      "title": "검색결과",
+      "href": "./pages/etc4.html",
+      "display": "etc4.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
+    },
+    {
+      "type": "page",
+      "title": "검색결과 없음",
+      "href": "./pages/etc4_1.html",
+      "display": "etc4_1.html",
+      "update": "2026.02.10",
+      "flags": [true, true, true],
+      "states": ["r", "end"],
+      "note": ""
     }
   ]
 }

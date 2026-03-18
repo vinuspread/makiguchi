@@ -56,7 +56,7 @@
       { "text": "Datepicker", "href": null },
       { "text": "Accordion", "href": null },
       { "text": "Dialog", "href": null },
-      { "text": "State Feedback", "href": null },
+      { "text": "State Feedback", "href": "./guide/statefeedback.html" },
       { "text": "Diagram", "href": null },
       { "text": "Indicators", "href": null },
       { "text": "Content List", "href": "./guide/contentlist.html" }
