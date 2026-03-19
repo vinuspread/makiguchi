@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding-inline: 2rem;
+  transition: background-color 0.5s;
   @media (width < 1024px) {
     padding-block: 1.6rem;
     padding-inline: 3rem;
@@ -15,8 +16,21 @@
     padding-inline: 2rem;
   }
   .right {
+    anchor-name: --header;
     display: flex;
     gap: 2.4rem;
+  }
+  &.fixed {
+    --logoColor: var(--gray900);
+    --gnbColor: var(--gray900);
+    position: fixed;
+    background-color: var(--white);
+    .right > .ico-search {
+      --icon: url(../../images/ico_search2.svg) no-repeat center / contain;
+    }
+    .ico-menu {
+      --icon: url(../../images/ico_menu2.svg) no-repeat center / contain;
+    }
   }
 }
 

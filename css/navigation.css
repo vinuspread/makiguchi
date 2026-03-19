@@ -10,14 +10,15 @@
   a {
     display: block;
     padding-block: 3.3rem;
-    color: var(--white);
+    color: var(--gnbColor, var(--white));
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 180%;
   }
   li.active {
     a {
-      background: linear-gradient(var(--white), var(--white)) no-repeat bottom / 100% 0.3rem;
+      background: linear-gradient(var(--gnbColor, var(--white)), var(--gnbColor, var(--white)))
+        no-repeat bottom / 100% 0.3rem;
     }
   }
 }

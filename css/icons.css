@@ -10,6 +10,10 @@
   --icon: url(../../images/ico_menu.svg) no-repeat center / contain;
   --size: 2.4rem;
 }
+.ico-menu2 {
+  --icon: url(../../images/ico_menu2.svg) no-repeat center / contain;
+  --size: 2.4rem;
+}
 .ico-search {
   --icon: url(../../images/ico_search.svg) no-repeat center / contain;
   --size: 2.4rem;
@@ -20,6 +24,10 @@
 }
 .ico-select {
   --icon: url(../../images/ico_select.svg) no-repeat center / contain;
+  --size: 2.4rem;
+}
+.ico-close {
+  --icon: url(../../images/ico_close.svg) no-repeat center / contain;
   --size: 2.4rem;
 }
 .ico-circle {

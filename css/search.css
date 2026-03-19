@@ -1,3 +1,42 @@
+body:has(.search:popover-open) {
+  .gnb,
+  .right > .ico-search,
+  .right > .ico-menu {
+    opacity: 0;
+  }
+}
+.search {
+  background-color: var(--black60);
+  inset: auto;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 9.8rem;
+  .search-inner {
+    display: grid;
+    padding-inline: 2rem 0.8rem;
+    align-items: center;
+    grid-template-columns: 1fr min-content min-content;
+    height: 100%;
+  }
+  button {
+    --size: 4.8rem;
+    background-size: 2.4rem;
+  }
+  input {
+    background-color: transparent;
+    height: 100%;
+    outline: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.04em;
+    color: var(--white);
+    &::placeholder {
+      color: inherit;
+    }
+  }
+}
 .search-result {
   padding-block: 6rem;
   border-top: 1px solid var(--gray900);
