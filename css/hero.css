@@ -107,3 +107,36 @@
     }
   }
 }
+
+.hero-type4 {
+  margin-block: 12rem;
+  padding-block: 12rem;
+  background: url(../images/img_main_hero.png);
+  text-align: center;
+  color: var(--white);
+  @media (width < 1024px) {
+    margin-block: 8rem;
+    padding-block: 8rem;
+    padding-inline: 3.6rem;
+  }
+  @media (width < 768px) {
+    padding-inline: 2.4rem;
+  }
+  .kor {
+    font-family: var(--notoserif);
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: -0.04em;
+  }
+  .en {
+    font-family: var(--notoserif);
+    font-weight: 300;
+    line-height: 150%;
+  }
+  .writer {
+    font-family: var(--notoserif);
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: -0.04em;
+  }
+}

@@ -55,4 +55,5 @@
 /* 템플릿 */
 
 /* 페이지 */
+@import url(./main.css) layer(page.main);
 @import url(./search.css) layer(page.search);

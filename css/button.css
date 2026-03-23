@@ -9,13 +9,15 @@
   /*                                    크기정의                                  */
   /* -------------------------------------------------------------------------- */
   &.base {
-    --px: 1rem;
-    --py: 1rem;
-    /* --fs:1.2rem; */
+    --px: 2.4rem;
+    --py: 0.8rem;
+    --fs: 1.8rem;
 
     padding-inline: var(--px);
     padding-block: var(--py);
     font-size: var(--fs, var(--font-base));
+    line-height: 180%;
+    font-weight: 700;
   }
   &.md {
     --px: 1.2rem;
@@ -35,9 +37,9 @@
     background-color: var(--primary);
   }
   &.secondary {
-    color: var(----gray500);
+    color: var(--gray900);
     background-color: var(--white);
-    border: 1px solid var(--gray500);
+    border: 1px solid var(--black20);
   }
   &:disabled {
     opacity: 0.2;

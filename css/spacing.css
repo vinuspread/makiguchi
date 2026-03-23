@@ -7,6 +7,9 @@
 .mt4 {
   margin-top: 0.4rem;
 }
+.mt12 {
+  margin-top: 1.2rem;
+}
 
 .mt-lg {
   margin-top: 5rem;
@@ -47,9 +50,9 @@
 .mt-2xs {
   margin-top: 1.6rem;
   @media (width < 1024px) {
-    margin-top: 6rem;
+    margin-top: 1.2rem;
   }
   @media (width < 768px) {
-    margin-top: 3.6rem;
+    margin-top: 0.8rem;
   }
 }
