@@ -12,6 +12,11 @@ body:has(.search:popover-open) {
   top: 0;
   width: 50%;
   height: 9.8rem;
+  @media (width < 768px) {
+    width: 100%;
+    background-color: var(--black);
+    height: 7.3rem;
+  }
   .search-inner {
     display: grid;
     padding-inline: 2rem 0.8rem;

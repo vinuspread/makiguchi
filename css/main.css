@@ -27,11 +27,12 @@
     translate: -50%;
     z-index: 100;
     @media (width < 1024px) {
-      inset: 13.4rem 3rem 0;
+      width: auto;
+      inset: 13.4rem 3rem auto;
       translate: 0;
     }
     @media (width < 768px) {
-      inset: 10.4rem 2rem 0;
+      inset: 10.4rem 2rem auto;
     }
   }
   .message {
@@ -88,12 +89,9 @@
     translate: -50% 19rem;
     gap: 1.2rem;
     @media (width < 1024px) {
-      inset: auto 3rem 11.5rem;
       width: auto;
-      translate: 0;
-    }
-    @media (width < 768px) {
-      inset: auto 2rem 11.5rem;
+      inset: anchor(--slideText bottom) auto auto 0;
+      translate: 1rem 19rem;
     }
     > button {
       width: 2.4rem;
@@ -252,7 +250,7 @@
       span {
         white-space: nowrap;
         align-self: start;
-        margin-top: 3.4rem;
+        margin-top: 1.2rem;
       }
     }
   }

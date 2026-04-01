@@ -11,7 +11,7 @@
   &.base {
     --px: 2.4rem;
     --py: 0.8rem;
-    --fs: 1.8rem;
+    --fs: 1.6rem;
 
     padding-inline: var(--px);
     padding-block: var(--py);

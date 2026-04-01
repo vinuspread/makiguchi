@@ -1,15 +1,15 @@
 .hero-type1 {
-  padding-block: 14.1rem 0rem;
+  padding-block: 16.5rem 0rem;
   background: var(--bg) no-repeat center / cover;
   overflow: hidden;
   &:empty {
     padding-block: 9.8rem 0;
   }
   @media (width < 1024px) {
-    padding-block: 12.9rem 3.6rem;
+    padding-block: 12.6rem 3.6rem;
   }
   @media (width < 768px) {
-    padding-block: 22rem 2.4rem;
+    padding-block: 21.1rem 2.4rem;
   }
   h2 {
     display: grid;
@@ -17,6 +17,12 @@
     font-weight: 700;
     letter-spacing: -0.144rem;
     margin-bottom: -2.7rem;
+    @media (width < 1024px) {
+      margin-bottom: -5rem;
+    }
+    @media (width < 768px) {
+      margin-bottom: -3.3rem;
+    }
   }
   [lang='ko'] {
     line-height: 150%;
@@ -29,7 +35,7 @@
     }
   }
   [lang='en'] {
-    font-size: 14rem;
+    font-size: 9.6rem;
     line-height: 100%;
     font-family: var(--georgia);
     @media (width < 1024px) {
