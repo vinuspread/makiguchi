@@ -23,7 +23,9 @@ const decorateMessageLines = (container) => {
       .filter(Boolean);
 
     message.innerHTML = lines
-      .map((line, index) => `<span class="message-line" style="--line-index:${index};">${line}</span>`)
+      .map(
+        (line, index) => `<span class="message-line" style="--line-index:${index};">${line}</span>`
+      )
       .join('');
   });
 };
@@ -44,6 +46,7 @@ export const initHeroSwiper = (selector = '.hero-swiper') => {
   const swiper = new Swiper(container, {
     modules: [Autoplay, Pagination],
     loop: true,
+    speed: 1000,
     autoplay: {
       delay: 4000,
       disableOnInteraction: true,
