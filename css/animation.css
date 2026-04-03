@@ -1,0 +1,70 @@
+.scroll-animate,
+.fade-in-left,
+.fade-in-right,
+.fade-in-up {
+  opacity: 0;
+  will-change: opacity, transform;
+  &.is-visible {
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+}
+
+.fade-in-left {
+  transform: translateX(-2rem);
+}
+
+.fade-in-right {
+  transform: translateX(2rem);
+}
+
+.fade-in-up {
+  transform: translateY(2rem);
+}
+
+.scroll-animate.is-visible,
+.fade-in-left.is-visible {
+  animation-name: fadeInLeft;
+}
+
+.fade-in-right.is-visible {
+  animation-name: fadeInRight;
+}
+
+.fade-in-up.is-visible {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

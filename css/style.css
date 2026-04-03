@@ -18,6 +18,7 @@
 @import url(./align.css) layer(utillity.align);
 @import url(./spacing.css) layer(utillity.spacing);
 @import url(./rounded.css) layer(utillity.rounded);
+@import url(./animation.css) layer(utillity.animation);
 @import url(./icons.css) layer(atom.icons);
 @import url(./typography.css) layer(atom.typography);
 @import url(./layout.css) layer(atom.layout);
