@@ -30,6 +30,9 @@
       --tab-gap: 2.4rem;
 
       margin-bottom: 3.6rem;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
   nav {
@@ -74,7 +77,7 @@
     --tab-active-text-color: var(--gray900);
     --tab-padding: 1.6rem;
     --tab-radius: 0;
-    --tab-gap: 0;
+    --tab-gap: 1.6rem;
 
     display: flex;
     gap: var(--tab-gap);
@@ -82,16 +85,21 @@
     margin-bottom: 7.2rem;
     @media (width < 1024px) {
       --tab-padding: 1.2rem;
+      --tab-gap: 1.2rem;
 
       margin-bottom: 6rem;
     }
     @media (width < 768px) {
       --tab-padding: 0.8rem;
+      --tab-gap: 0.8rem;
 
       margin-bottom: 3.6rem;
       width: 100%;
       overflow-x: auto;
       overflow-y: hidden;
+      &::-webkit-scrollbar {
+        opacity: 0;
+      }
     }
   }
   .active {

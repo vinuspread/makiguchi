@@ -22,6 +22,7 @@
     display: flex;
     gap: 2.4rem;
   }
+  &:has(.mega-nav:popover-open),
   &.fixed {
     --logoColor: var(--gray900);
     --gnbColor: var(--gray900);
@@ -33,6 +34,13 @@
     .ico-menu {
       --icon: url(../../images/ico_menu2.svg) no-repeat center / contain;
     }
+  }
+}
+
+body:has(.hero-type1:empty) .header {
+  @media (width < 768px) {
+    padding-block: 2.4rem;
+    padding-inline: 2rem;
   }
 }
 
