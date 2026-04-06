@@ -12,5 +12,9 @@
   "prettier.printWidth": 100,
   "prettier.trailingComma": "es5",
   "prettier.singleQuote": true,
-  "prettier.semi": true
+  "prettier.semi": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#2e2e2e",
+    "activityBar.background": "#2e2e2e"
+  }
 }

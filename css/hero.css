@@ -117,7 +117,7 @@
 .hero-type4 {
   margin-block: 12rem;
   padding-block: 12rem;
-  background: url(../images/img_main_hero.png);
+  background: url(../images/img_main_hero.png) no-repeat center / cover;
   text-align: center;
   color: var(--white);
   @media (width < 1024px) {
